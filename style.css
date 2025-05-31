@@ -1,0 +1,212 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        scroll-behavior: smooth;
+        transition: all 0.3s ease;
+    }
+body {
+      font-family: 'Inter', sans-serif;
+      background: #f7f7f7;
+      color: #111;
+    }
+
+    .hero-section {
+      padding: 60px 0;
+      background: linear-gradient(135deg, #e0ded2 0%, #ffe6e6 100%);
+    }
+
+    .hero-img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.6); /* more transparent */
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(8px); /* stronger blur for glass effect */
+      transition: background 0.3s;
+    }
+   
+    .post-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 420px; /* taller card */
+}
+
+.post-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  background-color: #f8f9fa;
+}
+
+.post-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.post-card h5 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.post-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+
+/* Navbar Hover Effect */
+.nav-link {
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #762dab !important; /* Bootstrap primary blue */
+}
+
+/* Scroll Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+header .nav .nav-link:hover {
+      color: #e81616;
+      
+    }
+    .post-card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #backToTop {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 48px;
+  height: 48px;
+  background: rgba(13, 110, 253, 0.85);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1200;
+  transition: background 0.3s, transform 0.2s;
+}
+#backToTop:hover {
+  background: #0d6efd;
+  transform: translateY(-4px) scale(1.08);
+}
+
+
+#Contact .card {
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+#Contact .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.bg-light-yellow {
+  background-color: #fffbe6 !important;
+  transition: box-shadow 0.2s;
+}
+.bg-light-yellow:focus {
+  box-shadow: 0 0 0 0.2rem #ffe066;
+}
+
+/* 1st and 3rd page background */
+.bg-page2 {
+  background: linear-gradient(135deg, #f7f7f7 0%, #e3e9ff 100%);
+}
+
+/* 2nd and 4th page background */
+.bg-page1 {
+  background: linear-gradient(135deg, #e0ded2 0%, #ffe6e6 100%);
+}
+
+#contact .form-control {
+  border-radius: 0.5rem;
+  box-shadow: none;
+  transition: 0.3s ease;
+}
+#contact .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+#contact button {
+  border-radius: 0.5rem;
+}
+#contact i {
+  min-width: 30px;
+}
+#contact .form-control::placeholder {
+  color: #6c757d;
+  opacity: 1; /* Ensure full opacity for placeholder */
+}
+.social-link:hover {
+    color: #0d6efd !important; /* Bootstrap primary blue */
+    transition: color 0.3s;
+  }
+
+.hover-black:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+html {
+  scroll-padding-top: 80px; /* Adjust to your header height */
+}
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.navbar.bg-transparent {
+  background: transparent !important;
+  box-shadow: none !important;
+}
